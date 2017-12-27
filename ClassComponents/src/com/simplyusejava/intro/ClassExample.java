@@ -1,3 +1,7 @@
+/**
+ * This below statements is the syntax to declare the package.
+ * Package is nothing but a folder structure of a java class from the project root.
+ */
 package com.simplyusejava.intro;
 
 
