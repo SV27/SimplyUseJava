@@ -25,6 +25,7 @@ public class CollectionsIntro {
 		/*
 		 * "List"
 		 * creating a list of String objects using List.
+		 * stores object sequentially
 		 * ArrayList is an implementation of List.
 		 */
 		
@@ -33,9 +34,11 @@ public class CollectionsIntro {
 		list.add("use java"); // adding another element to the list.
 		list.add("Simply"); // add a duplicate element to list.
 		list.add(null); // adding null object to list
+		list.add(4, "element"); // adding element at index 5. starting index is 0
 		for(String s : list) {
 			System.out.println("element from list : " +s);
 		}
+		System.out.println(list.get(2));
 		/**
 		 * you can see the from the below output that "list" allows duplicate object 
 		 * and null objects to be stored in it.
@@ -44,12 +47,15 @@ public class CollectionsIntro {
 		 *	element from list : use java
 		 *	element from list : Simply
 		 *	element from list : null
+		 *  element from list : element
+		 *  Simply
 		 * 
 		 */
 		
 		/*
 		 * "Set" example.
 		 * Creating a "set" of String objects.
+		 * Stores object sequentially.
 		 * "HashSet" is one of the implementation of "Set" interface.
 		 */
 		
@@ -58,7 +64,6 @@ public class CollectionsIntro {
 		set.add("use java"); // adding another string object to this "set"
 		set.add("Simply"); // adding the duplicate string object.
 		set.add(null); // adding null object to this "set"
-		
 		for(String s : set) {
 			System.out.println("Element from Set : " + s);
 		}
