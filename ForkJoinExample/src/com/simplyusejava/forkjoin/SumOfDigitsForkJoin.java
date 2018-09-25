@@ -12,12 +12,25 @@ public class SumOfDigitsForkJoin extends RecursiveAction {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	
+	/**
+	 * This array holds the list of Integers. 
+	 *  we need to find the sum of this array of Integer.
+	 */
 	private int[] digits;
 	
+	/**
+	 * the ForkJoin framework split the tasks into smaller units and
+	 * this List<Integer> is going to contain the result of each unit.
+	 */
 	private List<Integer> sumOfDigits;
 	
+	/**
+	 * This the is Maximum volume of each unit.
+	 * i.e., our ForkJoin will split the array by this threshold value and will perform the task.
+	 */
 	private static final int threshold = 5;
+	
 	
 	SumOfDigitsForkJoin(int[] digits, List<Integer> sum){
 		this.digits = digits;
