@@ -2,3 +2,4 @@
 /.recommenders/
 RemoteSystemsTempFiles/.project
 *.prefs
+*.classpath
